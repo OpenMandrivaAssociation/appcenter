@@ -36,13 +36,13 @@ Provides:       appcenter = %{version}
 %description
 AppCenter is a native Gtk+ app store built on AppStream and Packagekit.
 
-%package -n     gnome-shell-search-provider-elementary-appcenter
+%package -n     gnome-shell-search-provider-appcenter
 Summary:        Browse and manage apps -- Search Provider for GNOME Shell
 Group:          System/GUI/GNOME
 Requires:       %{name} = %{version}
 Requires:       gnome-shell
 
-%description -n gnome-shell-search-provider-elementary-appcenter
+%description -n gnome-shell-search-provider-appcenter
 AppCenter is a native Gtk+ app store built on AppStream and Packagekit.
 
 This package contains a search provider to enable GNOME Shell to get search
@@ -67,7 +67,7 @@ sed -i 's/\(distributor\)-logo/\1/' $(grep -rwl distributor-logo)
 %install
 %meson_install
 %suse_update_desktop_file -r -G AppCenter io.elementary.appcenter GTK System PackageManager
-%find_lang io.elementary.appcenter %{name}.lang
+#%find_lang io.elementary.appcenter %{name}.lang
 %fdupes %{buildroot}%{_datadir}
 
 # Add .desktop file to autostart
@@ -94,7 +94,7 @@ fi
 %config %{_sysconfdir}/io.elementary.appcenter/appcenter.blacklist
 %{_sysconfdir}/xdg/autostart/io.elementary.appcenter-daemon.desktop
 
-%files -n gnome-shell-search-provider-elementary-appcenter
+%files -n gnome-shell-search-provider-appcenter
 %dir %{_datadir}/gnome-shell
 %dir %{_datadir}/gnome-shell/search-providers
 %{_datadir}/gnome-shell/search-providers/io.elementary.appcenter.search-provider.ini
