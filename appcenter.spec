@@ -13,9 +13,9 @@ BuildRequires: gettext
 BuildRequires: gettext-devel
 BuildRequires: meson
 BuildRequires: pkgconfig
-BuildRequires: update-desktop-files
+#BuildRequires: update-desktop-files
 BuildRequires: pkgconfig(appstream)
-BuildRequires: pkgconfig(appstream-glib
+BuildRequires: pkgconfig(appstream-glib)
 BuildRequires: pkgconfig(flatpak)
 BuildRequires: pkgconfig(gee-0.8)
 BuildRequires: pkgconfig(gio-2.0)
