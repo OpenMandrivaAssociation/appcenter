@@ -1,4 +1,4 @@
-Name:           elementary-appcenter
+Name:           appcenter
 Version:        3.2.4
 Release:        1
 Summary:        An open, pay-what-you-want app store for indie developers
