@@ -99,4 +99,4 @@ fi
 %dir %{_datadir}/gnome-shell/search-providers
 %{_datadir}/gnome-shell/search-providers/io.elementary.appcenter.search-provider.ini
 
-%files lang -f %{name}.lang
+#%files lang -f %{name}.lang
