@@ -8,6 +8,7 @@ URL:            https://elementary.io/
 Source:         https://github.com/elementary/appcenter/archive/%{version}/%{name}-%{version}.tar.gz
 
 BuildRequires: appstream
+BuildRequires: cmake
 BuildRequires: fdupes
 BuildRequires: gettext
 BuildRequires: gettext-devel
