@@ -91,6 +91,7 @@ install -Dm0644 \
 #{_datadir}/dbus-1/services/io.elementary.appcenter.service
 %{_datadir}/glib-2.0/schemas/io.elementary.appcenter.gschema.xml
 %{_datadir}/metainfo/io.elementary.appcenter.appdata.xml
+%{_datadir}/locale/*/LC_MESSAGES/io.elementary.appcenter.mo
 %dir %{_sysconfdir}/io.elementary.appcenter
 %config %{_sysconfdir}/io.elementary.appcenter/appcenter.blacklist
 %{_sysconfdir}/xdg/autostart/io.elementary.appcenter-daemon.desktop
