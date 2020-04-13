@@ -68,9 +68,7 @@ sed -i 's/\(distributor\)-logo/\1/' $(grep -rwl distributor-logo)
 
 %install
 %meson_install
-%suse_update_desktop_file -r -G AppCenter io.elementary.appcenter GTK System PackageManager
 #%find_lang io.elementary.appcenter %{name}.lang
-%fdupes %{buildroot}%{_datadir}
 
 # Add .desktop file to autostart
 install -Dm0644 \
