@@ -77,18 +77,18 @@ install -Dm0644 \
   %{buildroot}%{_sysconfdir}/xdg/autostart/io.elementary.appcenter-daemon.desktop
 
 # Add OnlyShowIn key
-if ! grep OnlyShowIn.*Pantheon %{buildroot}%{_datadir}/applications/io.elementary.appcenter-daemon.desktop; then
-	sed -i '$aOnlyShowIn=Pantheon;' %{buildroot}%{_sysconfdir}/xdg/autostart/io.elementary.appcenter-daemon.desktop
-else
-	'This entry already exists' 2> /dev/null
-fi
+#if ! grep OnlyShowIn.*Pantheon %{buildroot}%{_datadir}/applications/io.elementary.appcenter-daemon.desktop; then
+#	sed -i '$aOnlyShowIn=Pantheon;' %{buildroot}%{_sysconfdir}/xdg/autostart/io.elementary.appcenter-daemon.desktop
+#else
+#	'This entry already exists' 2> /dev/null
+#fi
 
 %files
 %license COPYING
 %doc README.md
 %{_bindir}/io.elementary.appcenter
 %{_datadir}/applications/io.elementary.appcenter*.desktop
-%{_datadir}/dbus-1/services/io.elementary.appcenter.service
+#{_datadir}/dbus-1/services/io.elementary.appcenter.service
 %{_datadir}/glib-2.0/schemas/io.elementary.appcenter.gschema.xml
 %{_datadir}/metainfo/io.elementary.appcenter.appdata.xml
 %dir %{_sysconfdir}/io.elementary.appcenter
