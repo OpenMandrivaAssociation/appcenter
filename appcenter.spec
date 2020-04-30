@@ -1,5 +1,5 @@
 Name:           appcenter
-Version:        3.2.4
+Version:        3.3.0
 Release:        1
 Summary:        An open, pay-what-you-want app store for indie developers
 License:        GPL-3.0
@@ -57,7 +57,7 @@ results from AppCenter.
 %setup -q
 
 # Use the system logo
-sed -i 's/\(distributor\)-logo/\1/' $(grep -rwl distributor-logo)
+#sed -i 's/\(distributor\)-logo/\1/' $(grep -rwl distributor-logo)
 
 %build
 %meson	\
