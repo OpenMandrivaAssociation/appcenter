@@ -61,10 +61,10 @@ results from AppCenter.
 
 %build
 %meson	\
-    -Dcurated=false \
-    -Dhomepage=false \
+    -Dcurated=tre \
+    -Dhomepage=true \
     -Dlibunity=false \
-    -Dpayments=false
+    -Dpayments=true
 %meson_build
 
 %install
