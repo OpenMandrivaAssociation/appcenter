@@ -1,5 +1,5 @@
 Name:           appcenter
-Version:        3.3.0
+Version:        3.4.0
 Release:        1
 Summary:        An open, pay-what-you-want app store for indie developers
 License:        GPL-3.0
@@ -29,6 +29,7 @@ BuildRequires: pkgconfig(json-glib-1.0)
 BuildRequires: pkgconfig(libsoup-2.4)
 BuildRequires: pkgconfig(libsystemd)
 BuildRequires: pkgconfig(packagekit-glib2)
+BuildRequires: pkgconfig(polkit-gobject-1)
 BuildRequires: pkgconfig(vapigen)
 BuildRequires: pkgconfig(libxml-2.0)
 BuildRequires: libxml2-utils
@@ -61,10 +62,10 @@ results from AppCenter.
 
 %build
 %meson	\
-    -Dcurated=false \
-    -Dhomepage=false \
+    -Dcurated=true \
+    -Dhomepage=true \
     -Dlibunity=false \
-    -Dpayments=false
+    -Dpayments=true
 %meson_build
 
 %install
@@ -92,6 +93,7 @@ install -Dm0644 \
 %{_datadir}/glib-2.0/schemas/io.elementary.appcenter.gschema.xml
 %{_datadir}/metainfo/io.elementary.appcenter.appdata.xml
 %{_datadir}/locale/*/LC_MESSAGES/io.elementary.appcenter.mo
+%{_datadir}/polkit-1/actions/io.elementary.appcenter.policy
 %dir %{_sysconfdir}/io.elementary.appcenter
 %config %{_sysconfdir}/io.elementary.appcenter/appcenter.blacklist
 %{_sysconfdir}/xdg/autostart/io.elementary.appcenter-daemon.desktop
