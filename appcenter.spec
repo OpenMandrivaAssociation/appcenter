@@ -29,6 +29,7 @@ BuildRequires: pkgconfig(json-glib-1.0)
 BuildRequires: pkgconfig(libsoup-2.4)
 BuildRequires: pkgconfig(libsystemd)
 BuildRequires: pkgconfig(packagekit-glib2)
+BuildRequires: pkgconfig(polkit-gobject-1)
 BuildRequires: pkgconfig(vapigen)
 BuildRequires: pkgconfig(libxml-2.0)
 BuildRequires: libxml2-utils
