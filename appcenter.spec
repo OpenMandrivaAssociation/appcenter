@@ -95,7 +95,7 @@ install -Dm0644 \
 %{_datadir}/locale/*/LC_MESSAGES/io.elementary.appcenter.mo
 %{_datadir}/polkit-1/actions/io.elementary.appcenter.policy
 %dir %{_sysconfdir}/io.elementary.appcenter
-#config #{_sysconfdir}/io.elementary.appcenter/appcenter.blacklist
+%config %{_sysconfdir}/io.elementary.appcenter/appcenter.hiddenapps
 %{_sysconfdir}/xdg/autostart/io.elementary.appcenter-daemon.desktop
 
 %files -n gnome-shell-search-provider-appcenter
