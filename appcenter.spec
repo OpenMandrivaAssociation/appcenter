@@ -97,6 +97,8 @@ install -Dm0644 \
 %dir %{_sysconfdir}/io.elementary.appcenter
 %config %{_sysconfdir}/io.elementary.appcenter/appcenter.hiddenapps
 %{_sysconfdir}/xdg/autostart/io.elementary.appcenter-daemon.desktop
+%{_iconsdir}/hicolor/*x*/apps/io.elementary.appcenter.svg
+%{_iconsdir}/hicolor/symbolic/apps/io.elementary.appcenter-symbolic.svg
 
 %files -n gnome-shell-search-provider-appcenter
 %dir %{_datadir}/gnome-shell
