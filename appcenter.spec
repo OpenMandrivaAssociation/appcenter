@@ -1,5 +1,5 @@
 Name:           appcenter
-Version:        3.9.0
+Version:        3.9.1
 Release:        1
 Summary:        An open, pay-what-you-want app store for indie developers
 License:        GPL-3.0
@@ -15,7 +15,6 @@ BuildRequires: gettext
 BuildRequires: gettext-devel
 BuildRequires: meson
 BuildRequires: pkgconfig
-#BuildRequires: update-desktop-files
 BuildRequires: pkgconfig(appstream)
 BuildRequires: pkgconfig(appstream-glib)
 BuildRequires: pkgconfig(flatpak)
