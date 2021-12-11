@@ -62,8 +62,6 @@ results from AppCenter.
 %build
 %meson	\
     -Dcurated=true \
-    -Dhomepage=true \
-    -Dlibunity=false \
     -Dpayments=true
 %meson_build
 
