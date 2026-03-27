@@ -1,6 +1,6 @@
 Name:           appcenter
 Version:        3.9.1
-Release:        2
+Release:        3
 Summary:        An open, pay-what-you-want app store for indie developers
 License:        GPL-3.0
 Group:          System/Configuration
